@@ -1,0 +1,64 @@
+generated: '2026-07-19'
+method: searched
+source: https://registry.npmjs.org/ (npm registry search + package metadata), https://github.com/lalalilo
+notes: >-
+  Lalilo publishes no public API and therefore ships no API client SDKs. The
+  packages below are first-party open-source engineering tooling published by
+  the Lalilo GitHub organization (github.com/lalalilo) to npm. They are marked
+  official:true because the repository/maintainer chain resolves to Lalilo, but
+  they are explicitly NOT API client libraries — no `SDKs` pointer is emitted in
+  apis.yml for that reason.
+registries_probed:
+- registry: npm
+  result: 3 first-party packages found
+- registry: pypi
+  result: no first-party package (pypi.org/pypi/lalilo 404)
+- registry: rubygems
+  result: not found
+- registry: packagist
+  result: not found
+- registry: crates.io
+  result: not found
+- registry: nuget
+  result: not found
+- registry: maven-central
+  result: not found
+- registry: pkg.go.dev
+  result: not found
+packages:
+- language: typescript
+  registry: npm
+  name: aws-spa
+  version: 5.3.0
+  url: https://www.npmjs.com/package/aws-spa
+  repository: https://github.com/lalalilo/aws-spa
+  install: npm install aws-spa
+  license: MIT
+  last_published: '2026-06-01'
+  official: true
+  kind: tooling
+  description: A no-brainer script to deploy a single page app on AWS.
+- language: typescript
+  registry: npm
+  name: tslint-config-lalilo
+  version: 1.1.0
+  url: https://www.npmjs.com/package/tslint-config-lalilo
+  repository: https://github.com/lalalilo/tslint-config-lalilo
+  install: npm install tslint-config-lalilo
+  license: MIT
+  last_published: '2022-05-22'
+  official: true
+  kind: lint-config
+  description: Lalilo shared tslint rules.
+- language: javascript
+  registry: npm
+  name: eslint-config-lalilo
+  version: 1.0.4
+  url: https://www.npmjs.com/package/eslint-config-lalilo
+  install: npm install eslint-config-lalilo
+  license: MIT
+  last_published: '2022-05-01'
+  official: true
+  kind: lint-config
+  description: Shared eslint configuration across Lalilo projects.
+sdks: []

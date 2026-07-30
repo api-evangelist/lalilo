@@ -1,0 +1,43 @@
+generated: '2026-07-19'
+method: searched
+source: live HTTP probes of the Lalilo web hosts
+host: https://www.lalilo.com
+notes: >-
+  Every /.well-known/ path probed returned 404. lalilo.com 308-redirects to
+  www.lalilo.com (a Figma Sites-hosted marketing site), which serves a 404 for
+  all discovery documents. No api.lalilo.com / developer.lalilo.com /
+  docs.lalilo.com host resolves. This is a recorded negative result — no
+  WellKnown or SecurityTxt pointer is wired into apis.yml because no document
+  exists.
+hosts_probed:
+- host: lalilo.com
+  result: 308 redirect to www.lalilo.com
+- host: www.lalilo.com
+  result: reachable
+- host: app.lalilo.com
+  result: reachable (teacher dashboard SPA, 403 to non-browser clients on subpaths)
+- host: api.lalilo.com
+  result: does not resolve
+- host: developer.lalilo.com
+  result: does not resolve
+- host: docs.lalilo.com
+  result: does not resolve
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+- path: /llms.txt
+  status: 404
+- path: /robots.txt
+  status: 404
+- path: /sitemap.xml
+  status: 200
+  file: null
+  note: present but not a well-known discovery document

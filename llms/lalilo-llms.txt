@@ -1,0 +1,62 @@
+# Lalilo
+
+> Lalilo is an adaptive reading and literacy web application for primary-school
+> classrooms, founded in Paris in 2016 and acquired by Renaissance (Wisconsin
+> Rapids, USA) in 2021. It delivers roughly 90,000 interactive phonics, fluency
+> and comprehension exercises that adapt in real time to each student, uses
+> speech recognition to assess oral reading, and gives teachers a dashboard for
+> differentiated small-group instruction. It is used by around 40,000 teachers
+> and 400,000 students a year in France (cycles 2–3), with explicit support for
+> DYS, allophone, ULIS, SEGPA and IME learners.
+
+## Status
+
+Lalilo publishes **no public API, no developer portal and no API
+documentation**. As of 2026-07-19 no `api.lalilo.com`, `developer.lalilo.com`
+or `docs.lalilo.com` host resolves, and no OpenAPI, AsyncAPI, GraphQL schema or
+webhook catalog is published. The product is consumed through the teacher and
+student web apps at https://app.lalilo.com/. Integration and rostering
+questions are handled through Renaissance support rather than a self-serve
+developer program.
+
+## Product
+
+- [Lalilo](https://www.lalilo.com/): Marketing site and product overview (FR/EN).
+- [Teacher dashboard](https://app.lalilo.com/): The teacher and student web application.
+- [Pricing](https://www.lalilo.com/pricing): Subscription pricing for schools and districts.
+- [Tarifs](https://www.lalilo.com/tarifs): French-language pricing page.
+- [Request a quote](https://www.lalilo.com/request-a-quote): Quote request for collectivités / districts.
+- [Resources](https://www.lalilo.com/resources): Teaching resources and research publications.
+
+## Company
+
+- [Meet the team](https://www.lalilo.com/meet-the-team): Team page.
+- [Blog / press](https://blog.lalilo.com/presse/): Lalilo blog and press coverage.
+- [GitHub organization](https://github.com/lalalilo): 22 public repositories of first-party engineering tooling — no API code or specs.
+
+## Support
+
+- [Help center](https://help2.renaissance.com/lalilo-en): Renaissance-hosted Lalilo knowledge base.
+- [FAQ (FR)](https://intercom.help/lalilo/en/collections/739287-fr-foire-aux-questions): French frequently-asked-questions collection.
+- Support email: lalilosupport@renaissance.com
+
+## Legal
+
+- [Terms of service](https://docs.renaissance.com/R68618): Renaissance terms covering Lalilo.
+- [Privacy policy](https://www.renaissance.com/privacy/): Renaissance privacy policy.
+- [Mentions légales](https://ressources.lalilo.com/mentions.pdf): French legal notice.
+- [Information Security Overview — Lalilo](https://renaissance.widen.net/view/pdf/b9p0jiiomn/Information-Security-Overview-Lalilo-EN-and-FR-2025.pdf): Lalilo-specific security overview (PDF, EN/FR, 2025).
+
+## Packages
+
+Lalilo publishes open-source engineering tooling to npm; none of it is an API client library.
+
+- [aws-spa](https://www.npmjs.com/package/aws-spa): Deploy a single-page app to AWS.
+- [tslint-config-lalilo](https://www.npmjs.com/package/tslint-config-lalilo): Shared tslint rules.
+- [eslint-config-lalilo](https://www.npmjs.com/package/eslint-config-lalilo): Shared eslint configuration.
+
+## Catalog
+
+- [APIs.json](https://raw.githubusercontent.com/api-evangelist/lalilo/refs/heads/main/apis.yml): The API Evangelist catalog entry for Lalilo.
+- [Domain security probe](https://raw.githubusercontent.com/api-evangelist/lalilo/refs/heads/main/security/lalilo-domain-security.yml): TLS/HSTS/DNSSEC/CAA/SPF/DMARC posture for lalilo.com.
+- [Well-known probe](https://raw.githubusercontent.com/api-evangelist/lalilo/refs/heads/main/well-known/lalilo-well-known.yml): Recorded /.well-known/ discovery results (all 404).
