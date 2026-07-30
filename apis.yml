@@ -1,21 +1,50 @@
 aid: lalilo
 name: Lalilo
-description: 'Lalilo is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Applicative SaaS. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Lalilo is an adaptive reading and literacy web application for primary-school
+  classrooms, founded in Paris in 2016 and acquired by Renaissance (Wisconsin Rapids,
+  USA) in 2021. It delivers roughly 90,000 interactive phonics, fluency and comprehension
+  exercises that adapt in real time to each student, uses speech recognition to assess
+  oral reading aloud, and gives teachers a dashboard for tracking progress and running
+  differentiated small-group instruction. It is used by around 40,000 teachers and
+  400,000 students a year in France across cycles 2 and 3, with explicit support for
+  DYS, allophone, ULIS, SEGPA and IME learners. Lalilo publishes no public API, developer
+  portal or API documentation: the product is consumed through the teacher and student
+  web applications at app.lalilo.com, and integration or rostering questions are handled
+  through Renaissance support rather than a self-serve developer program.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.lalilo.com/_assets/v11/485604b61b151af7f5d48f6f1ad7eff4dd906228.png
 url: https://raw.githubusercontent.com/api-evangelist/lalilo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - partech
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: no-public-api
+x-api-surface: none
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Applicative Saas
+- Education
+- EdTech
+- Literacy
+- Reading
+- K-12
+- Adaptive Learning
+- Speech Recognition
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +54,30 @@ maintainers:
 common:
 - type: Website
   url: https://lalilo.com/
+- type: Login
+  url: https://app.lalilo.com/
+- type: Pricing
+  url: https://www.lalilo.com/pricing
+- type: Support
+  url: https://help2.renaissance.com/lalilo-en
+- type: HelpCenter
+  url: https://intercom.help/lalilo/en/collections/739287-fr-foire-aux-questions
+- type: Blog
+  url: https://blog.lalilo.com/presse/
+- type: GitHubOrganization
+  url: https://github.com/lalalilo
+- type: TermsOfService
+  url: https://docs.renaissance.com/R68618
+- type: PrivacyPolicy
+  url: https://www.renaissance.com/privacy/
+- type: Packages
+  url: packages/lalilo-packages.yml
+- type: LLMsTxt
+  url: llms/lalilo-llms.txt
+- type: DomainSecurity
+  url: security/lalilo-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
