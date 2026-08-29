@@ -11,6 +11,17 @@ description: 'Lalilo is an adaptive reading and literacy web application for pri
   portal or API documentation: the product is consumed through the teacher and student
   web applications at app.lalilo.com, and integration or rostering questions are handled
   through Renaissance support rather than a self-serve developer program.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
